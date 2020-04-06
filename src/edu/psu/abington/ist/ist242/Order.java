@@ -9,7 +9,7 @@ public class Order {
     private ArrayList<Menu> menuItem;
     private static ArrayList<Order> orderList = new ArrayList<>();
 
-    //Constructor Methodt
+    //Constructor Method
     public Order(int _orderId){
         this.orderId = _orderId;
     }

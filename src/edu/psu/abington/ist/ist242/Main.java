@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-     int cCount = 1;
+     int cCount = 0;
 
     private static Scanner scnr = new Scanner (System.in);
     public static void main(String[] args) {
@@ -66,7 +66,7 @@ public class Main {
                     int cid = scnr.nextInt();
 
                     ArrayList<Menu> cMenu = selectMenu(mList);
-                    Order.addOrders(order1, cList.get(cid),cMenu);
+                    Order.addOrders(order1, cList.get(cid-1),cMenu);
                     oList.add(order1);
                     trans1= payment(order1);
                     tList.add(trans1);
